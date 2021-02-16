@@ -1,216 +1,111 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
+<title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Assignment Solution for Module 2</title>
-</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-h1 {
-  margin-bottom: 15px;
-  text-align: center;
-  background-color: #AAFF80;
-  height: 100px;
-}
-h2 {
-  margin-bottom: 15px;
-  text-align: center;
-  background-color:  #00E6AC;
-  height: 50px;
-}
-div.relative {
-    border: 2px solid black;
-    background-color: #FFE6E6;
-    position: relative;
-    width: 400px;
-    height: 390px;
-    padding: 25px;
-    margin-bottom: 15px;
-    margin-left: 10px;   
-    clear: right;
-    background-image: url("ass1.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-} 
-
-div.absolute1 {
-    background-color: #FF9980;
-    border: 2px solid black;
-    position: absolute;
-    text-align: center;
-    top: 0px;
-    right: 0;
-    width: 445px;
-    height: 20px;
-    
-}
-div.absolute2 {
-    background-color: #FFB3FF;
-    border: 2px solid black;
-    position: absolute;
-    text-align: center;
-    top: 0px;
-    right: 0;
-    width: 446px;
-    height: 20px;
-}
-div.absolute3 {
-    background-color: #DEB887;
-    border: 2px solid black;
-    position: absolute;
-    text-align: center;
-    top: 0px;
-    right: 0;
-    width: 446px;
-    height: 20px;
-}
-@media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-    border: 1px ;
-  }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
-    border: 1px ;
-  }
-  .col-sm-1 {
-    width: 8.33%;
-  }
-  .col-sm-2 {
-    width: 16.66%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  .col-sm-5 {
-    width: 41.66%;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .col-sm-7 {
-    width: 58.33%;
-  }
-  .col-sm-8 {
-    width: 66.66%;
-  }
-  .col-sm-9 {
-    width: 74.99%;
-  }
-  .col-sm-10 {
-    width: 83.33%;
-  }
-  .col-sm-11 {
-    width: 91.66%;
-  }
-  .col-sm-12 {
-    width: 100%;
-  }
-}
-@media (max-width: 767px) {
-  .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
-    float: left;
-    border: 1px ;
-  }
-  .col-xs-1 {
-    width: 8.33%;
-  }
-  .col-xs-2 {
-    width: 16.66%;
-  }
-  .col-xs-3 {
-    width: 25%;
-  }
-  .col-xs-4 {
-    width: 33.33%;
-  }
-  .col-xs-5 {
-    width: 41.66%;
-  }
-  .col-xs-6 {
-    width: 50%;
-  }
-  .col-xs-7 {
-    width: 58.33%;
-  }
-  .col-xs-8 {
-    width: 66.66%;
-  }
-  .col-xs-9 {
-    width: 74.99%;
-  }
-  .col-xs-10 {
-    width: 83.33%;
-  }
-  .col-xs-11 {
-    width: 91.66%;
-  }
-  .col-xs-12 {
-    width: 100%;
-  }
+.mySlides {display:none}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 </style>
-</head>
-<body>
+<body style="background-image: url('10.jpeg');>
+<div>
+<div class="w3-container">
+  <h2 style="text-align: center;">Happy Birthday Chitra ❣️ </h2>
+</div>
 
-<h1>HOME</h1>
-<h2>OUR MENU</h2>
-<div class="col-md-4 col-sm-6 col-xs-8">
-   <div class="relative">loren ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-   <div class="absolute1">CHICKEN</div>
-   </div>
+<div class="w3-content" style="max-width:800px">
+	<div class="mySlides">
+  		<img class="center" src="1.jpeg" style="width:50%">
+  		<div style="text-align: center;">I have to say you something!!!</div>
+	</div>
+    <div class="mySlides">
+  		<img class="center" src="2.jpeg" style="width:50%">
+  		<div style="text-align: center;">Today is 17th Feb 2021 ❣️</div>
+	</div>
+    <div class="mySlides">
+  		<img  class="center" src="3.jpeg" style="width:50%">
+  		<div style="text-align: center;">Today this Date My Princess took Birth!!!</div>
+	</div>
+    <div class="mySlides">
+  		<img  class="center" src="4.jpeg" style="width:50%">
+  		<div style="text-align: center;">I am thankfull that GOD have created such a wonderful creature!!! ❣️</div>
+	</div><div class="mySlides">
+  		<img  class="center" src="5.jpeg" style="width:50%">
+  		<div style="text-align: center;">I could not imagine how the past years would be like without you!!! ❣️</div>
+	</div>
+    <div class="mySlides">
+  		<img  class="center" src="6.jpeg" style="width:50%">
+  		<div style="text-align: center;">You made my life beautiful baby!!!</div>
+	</div>
+    <div class="mySlides">
+  		<img  class="center" src="7.jpeg" style="width:50%">
+  		<div style="text-align: center;">Can't express how important U are to me Baby!!!</div>
+	</div>
+    <div class="mySlides">
+  		<img  class="center" src="8.jpeg" style="width:50%">
+  		<div style="text-align: center;">Happy Birthday to the most special girl of my Life!!!</div>
+	</div>
+    <div class="mySlides">
+  		<img  class="center" src="9.jpeg" style="width:50%">
+  		<div style="text-align: center;">I Love You Baby!!!</div>
+	</div>
 </div>
-<div class="col-md-4 col-sm-6 col-xs-8">
-   <div class="relative"  background-color: #A52A2A;>loren ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-   <div class="absolute2">BEEF</div>
-   </div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+  <button class="w3-button demo" onclick="currentDiv(1)">4</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">5</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">6</button>
+  <button class="w3-button demo" onclick="currentDiv(1)">7</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">8</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">9</button>
 </div>
-<div class="col-md-4 col-sm-6 col-xs-8">
-   <div class="relative">loren ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-   <div class="absolute3">SUSHI</div>
-   </div>
+
+<audio controls class="center">
+  <source src="11.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
 </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
 
 </body>
 </html>
